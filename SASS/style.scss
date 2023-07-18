@@ -1,0 +1,199 @@
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../Assets/img/background.png");
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2.5rem;
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-left: 2rem;
+    }
+}
+
+main {
+    flex: 1;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 90%;
+    max-height: 8rem;
+}
+
+.personajes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.personaje {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0.6rem;
+    border-radius: 1rem;
+    background: transparent;
+    border-radius: 1rem;
+    width: 18rem; // revisar que hacer con el heigth y width
+    box-shadow: 0px 0px 8px -1px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 0px 8px -1px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 8px -1px rgba(255, 255, 255, 1);
+    color: black;
+    #image {
+        margin-top: 0.4rem;
+        border-radius: 50%;
+        box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.61);
+        -webkit-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.61);
+        -moz-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.61);
+        z-index: 2;
+        position: relative;
+    }
+    .datos {
+        z-index: 1;
+        width: 16rem;
+        background-color: white;
+        padding: 2rem 1rem 0.5rem 1rem;
+        transform: translateY(-1rem);
+        margin-bottom: -1rem;
+        h3 {
+            padding: 0.1rem;
+            margin: 0.2rem;
+            border-radius: 0.2rem;
+        }
+        #name {
+            color: #ff008c;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+    }
+    #status {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-15%, 20%);
+        color: white;
+        border-radius: 0.4rem;
+        padding: 0.5rem;
+    }
+}
+
+.alive {
+    background-color: green;
+}
+
+.dead {
+    background-color: red;
+}
+
+.unknown {
+    border: 1px solid #f2f2f2;
+    background-color: transparent;
+}
+
+#gender-icon {
+    width: 50px;
+}
+
+.barraBusqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    font-size: 2rem;
+    input[type="search"] {
+        padding: 0.3rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        font-size: 1.8rem;
+    }
+
+    input[type="search"]:focus {
+        outline: none;
+    }
+
+    .filtro {
+        font-size: 2rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        #filtro {
+            vertical-align: middle;
+            transform: scale(1.8);
+            margin: 0 0.5rem 0 2rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    .btn {
+        font-size: 1.2rem;
+        margin-right: 2rem;
+        color: black;
+        background-color: white;
+        border-radius: 0.5rem;
+        border: 1px solid #fff;
+        padding: 1rem;
+    }
+    .active{
+        background-color: black;
+        color: #f2f2f2;
+    }
+}
+
+footer {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    .links {
+        padding: 1rem;
+        border-radius: 1rem;
+        a {
+            img {
+                margin: 2rem;
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+}
+
